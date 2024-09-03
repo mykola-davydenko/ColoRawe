@@ -8,19 +8,20 @@
     --order-item: #959595;
     --footer-background: #021635;
     --order-button: #8D8D8D;
+    --footer-line: #9B9B9B;
 }
 
 .container{
-    width: 1140px;
+    width: 1056px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 12px;
+    outline: 1px solid red;
 }
 
 .header{
 background: var(--header-background);
 padding-top: 16px;
 padding-bottom: 14px;
-height: 93px;
 }
 
 .header-box{
@@ -104,13 +105,15 @@ line-height: 1.17;
 
 .main-hero{
 background-image: url(../img/hero-background.jpg);
-width: 1440px;
-height: 858px;
+background-position: center;
+background-size: cover;
+padding-top: 94px;
+padding-bottom: 183px;
 }
 
 .hero-img{
-padding-top: 94px;
-width: 160px;
+    width: 160px;
+    height: 120px;
 }
 
 .hero-caption{
@@ -161,95 +164,60 @@ font-family: Roboto;
     line-height: 1.17;
     border-radius: 10px;
 background: var(--hero-btn);
-width: 254px;
-height: 67px;
 border: none;
+padding-left: 61px;
+padding-top: 20px;
+padding-bottom: 19px;
+padding-right: 61px;
 }
 
 .main-quality{
 background-image: url(../img/quality-background.jpg);
-width: 1440px;
-height: 606px;
-display: flex;
-align-items: center;
-}
-
-.quality-title1{
-    color: var(--accent-color);
-font-family: "Playfair Display";
-font-size: 36px;
-font-weight: 400;
-line-height: 1.33;
-width: 159px;
-height: 102px;
-padding-top: 25px;
-padding-left: 91px;
-}
-
-.quality-title2{
-color: var(--accent-color);
-text-align: center;
-font-family: "Playfair Display";
-font-size: 36px;
-font-style: normal;
-font-weight: 400;
-line-height: 1.33;
-margin-bottom: 19px;
-margin-left: 135px;
-margin-right: 134px;
-width: 161px;
-height: 102px;
-}
-
-.quality-title3{
-    color: var(--accent-color);
-text-align: center;
-font-family: "Playfair Display";
-font-size: 36px;
-font-style: normal;
-font-weight: 400;
-line-height: 1.33;
-padding-top: 22px;
-margin-left: 95px;
-width: 151px;
-height: 103px;
-padding-bottom: 6px;
-}
-
-.quality-item1{
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-.quality-line{
-    width: 1px;
-    height: 346px;
-    background: var(--accent-color);
-    margin-top: 25px;
-    margin-bottom: 25px;
+background-position: center;
+background-size: cover;
+padding-top: 105px;
+padding-bottom: 105px;
 }
 
 .quality-list{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    outline: 5px solid var(--hero-btn);   
+    outline: 5px solid var(--hero-btn);
+    padding-top: 25px;   
+    padding-bottom: 25px;
 }
 
-.quality-img1{
-margin-right: 50px;
-}
-
-.quality-img2{
-margin-bottom: 10px;
-margin-left: 95px;
-width: 240px;
-height: 240px;
-}
-
-
-.quality-img3{
+.quality-item{
+display: flex;
+flex-direction: column;
+align-items: center;
 padding-left: 50px;
+padding-right: 50px;
+border-right: 1px solid var(--accent-color);
+flex-basis: calc(100% / 3);
+}
+
+.quality-item:last-child{
+border-right: none;
+}
+
+.quality-item:nth-child(2){
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 95px;
+    padding-right: 95px;
+}
+
+
+.quality-title{
+color: var(--accent-color);
+text-align: center;
+font-family: "Playfair Display";
+font-size: 36px;
+font-weight: 400;
+line-height: 1.33;
+width: 160px;
 }
 
 .main-line{
@@ -260,8 +228,10 @@ padding-left: 50px;
 
 .main-reviews{
 background-image: url(../img/reviews-background.jpg);
-width: 1440px;
-height: 520px;
+background-position: center;
+background-size: cover;
+padding-top: 25px;
+padding-bottom: 1px;
 }
 
 .reviews-list{
@@ -279,8 +249,8 @@ text-align: center;
     font-style: normal;
     font-weight: 400;
     line-height: 1.33;
-padding-bottom: 24px;
-padding-top: 24px;
+    margin-bottom: 24px;
+    margin-top: 24px;
 }
 
 .reviews-caption{
@@ -291,7 +261,6 @@ font-family: Roboto;
     font-weight: 400;
     line-height: 1.17;
     width: 228px;
-    padding-bottom: 8px;
 }
 
 .reviews-text{
@@ -301,7 +270,6 @@ font-family: Roboto;
     font-style: normal;
     font-weight: 400;
     line-height: 1.14;
-    padding-bottom: 47px;
 }
 
 .reviews-img{
@@ -335,8 +303,10 @@ font-family: Roboto;
 
 .main-order{
 background-image: url(../img/order-background.png);
-width: 1440px;
-height: 509px;
+background-position: center;
+background-size: cover;
+padding-top: 21px;
+padding-bottom: 37px;
 }
 
 .order-title{
@@ -345,17 +315,9 @@ font-family: "Playfair Display";
     font-size: 48px;
     font-weight: 400;
     line-height: 1.33;
+    margin-bottom: 33px;
     display: flex;
     justify-content: center;
-    padding-top: 21px;
-    padding-bottom: 33px;
-}
-
-.order-item{
-    border-radius: 50px;
-    background: var(--accent-color);
-    width: 580px;
-height: 50px;
 }
 
 .order-list{
@@ -363,6 +325,12 @@ height: 50px;
     align-items: center;
     flex-direction: column;
     gap: 19px;
+}
+
+.order-item{
+    border-radius: 50px;
+    background: var(--accent-color);
+    border: none;
 }
 
 .order-item:hover,
@@ -374,9 +342,7 @@ font-family: Roboto;
 font-size: 28px;
 font-weight: 400;
 line-height: 1.18;
-width: 690px;
-height: 60px;
-border-radius: 50px;
+border: none;
 }
 
 .order-input{
@@ -386,10 +352,11 @@ border-radius: 50px;
 font-size: 24px;
 font-weight: 400;
 line-height: 1.17;
-margin-bottom: 11px;
-margin-top: 11px;
 padding-left: 24px;
-} 
+padding-top: 11px;
+padding-bottom: 11px;
+padding-right: 426px;
+}  
 
 .order-btn{
     border-radius: 16px;
@@ -397,26 +364,44 @@ padding-left: 24px;
     color: var(--accent-color);
 font-family: Roboto;
 font-size: 24px;
-width: 248px;
-height: 68px;
 font-weight: 400;
 line-height: 1.17;
 border: none;
-margin-top: 19px;
+margin-top: 19px; 
+padding-left: 48px;
+padding-top: 20px;
+padding-right: 49px;
+padding-bottom: 20px;
+display: flex;
+
 }
 
-.footer{
+.footer-information{
 background: var(--footer-background);
-width: 1440px;
-height: 292px;
+background-position: center;
+background-size: cover;
+padding-top: 45px;
+padding-bottom: 50px;
+}
+
+.information-list{
+padding-top: 45px;
+margin-bottom: 20px;
 }
 
 .information-text{
-    color: var(--accent-color);
+color: var(--accent-color);
 font-family: Roboto;
 font-size: 24px;
 font-weight: 400;
 line-height: 1.17;
+margin-left: 165px;
+margin-bottom: 10px;
+}
+
+.information-list1{
+padding-top: 45px;
+margin-bottom: 20px;
 }
 
 .information-link{
@@ -426,6 +411,15 @@ font-family: Roboto;
     font-weight: 400;
     line-height: 1.17;
     text-decoration-line: underline;
+}
+
+.information-line{
+    width: 1110px;
+    height: 1px;
+    background: var(--footer-line);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .information-text-rights{
