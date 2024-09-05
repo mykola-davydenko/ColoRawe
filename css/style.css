@@ -9,6 +9,12 @@
     --footer-background: #021635;
     --order-button: #8D8D8D;
     --footer-line: #9B9B9B;
+    --john-gradient:#7B54B2;
+    --john-item-gradient:#533978;
+    --elizabeth-gradient:#9159B1;
+    --elizabeth-item-gradient:#61337C;
+    --tom-gradient:#B95A4C;
+    --tom-item-gradient:#732F26;
 }
 
 .container{
@@ -131,7 +137,7 @@ font-family: "Playfair Display";
     font-size: 144px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.33;
+    line-height: 1;
 }
 
 .hero-headline{
@@ -140,7 +146,7 @@ font-family: "Playfair Display";
     font-size: 72px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.33;
+    line-height: 1;
 }
 
 .hero-text{
@@ -253,6 +259,38 @@ text-align: center;
     margin-top: 24px;
 }
 
+.reviews-item-john{
+    background: linear-gradient(137deg, #00E5E6 7.29%, #00A8F7 26.04%, #9A76F9 62.5%, #CC5EC2 100%);
+    box-shadow: 0px 14px 0px -5px var(--john-gradient), 0px 30px 0px -13px var(--john-item-gradient);
+    border-radius: 15px;
+}
+
+.reviews-item-elizabeth{
+    border-radius: 15px;
+    background: linear-gradient(137deg, #FF68B4 0%, #FF45E1 26.04%, #CE3AFF 62.84%, #8961FF 100%);
+    box-shadow: 0px 14px 0px -5px var(--elizabeth-gradient), 0px 30px 0px -13px var(--elizabeth-item-gradient);
+}
+
+.reviews-item-tom{
+    border-radius: 15px;
+    background: linear-gradient(143deg, #FFE128 0%, #FF9B5C 30.21%, #FF8381 63.29%, #FF5489 100%);
+    box-shadow: 0px 14px 0px -5px var(--tom-gradient), 0px 30px 0px -13px var(--tom-item-gradient);
+}
+
+.reviews-caption-john{
+    color: var(--accent-color);
+font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+    width: 228px;
+    padding-top: 49px;
+    padding-left: 13px;
+    padding-bottom: 8px;
+    padding-right: 14px;
+}
+
 .reviews-caption{
     color: var(--accent-color);
 font-family: Roboto;
@@ -261,6 +299,20 @@ font-family: Roboto;
     font-weight: 400;
     line-height: 1.17;
     width: 228px;
+    padding-top: 49px;
+    padding-left: 18px;
+    padding-bottom: 8px;
+    padding-right: 9px;
+}
+
+.reviews-text1{
+    color: var(--reviews-date);
+font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.14;
+    padding-left: 13px;
 }
 
 .reviews-text{
@@ -270,6 +322,7 @@ font-family: Roboto;
     font-style: normal;
     font-weight: 400;
     line-height: 1.14;
+    padding-left: 18px;
 }
 
 .reviews-img{
@@ -287,12 +340,13 @@ font-family: Roboto;
     line-height: 1.42;
 }
 
-.reviews-text{
+.reviews-sentences{
     color: var(--reviews-date);
 font-family: Roboto;
-    font-size: 12px;
+    font-size: 14px;
+    font-style: normal;
     font-weight: 400;
-    line-height: 1.17;
+    line-height: 1.14;
 }
 
 .main-border{
@@ -307,6 +361,7 @@ background-position: center;
 background-size: cover;
 padding-top: 21px;
 padding-bottom: 37px;
+text-align: center;
 }
 
 .order-title{
@@ -343,6 +398,10 @@ font-size: 28px;
 font-weight: 400;
 line-height: 1.18;
 border: none;
+padding-top: 12px;
+padding-bottom: 13px;
+padding-left: 25px;
+width: 690px;
 }
 
 .order-input{
@@ -355,7 +414,7 @@ line-height: 1.17;
 padding-left: 24px;
 padding-top: 11px;
 padding-bottom: 11px;
-padding-right: 426px;
+width: 580px;
 }  
 
 .order-btn{
@@ -372,8 +431,6 @@ padding-left: 48px;
 padding-top: 20px;
 padding-right: 49px;
 padding-bottom: 20px;
-display: flex;
-
 }
 
 .footer-information{
@@ -385,7 +442,6 @@ padding-bottom: 50px;
 }
 
 .information-list{
-padding-top: 45px;
 margin-bottom: 20px;
 }
 
@@ -395,13 +451,12 @@ font-family: Roboto;
 font-size: 24px;
 font-weight: 400;
 line-height: 1.17;
-margin-left: 165px;
+padding-left: 165px;
 margin-bottom: 10px;
 }
 
-.information-list1{
-padding-top: 45px;
-margin-bottom: 20px;
+.information-list{
+    margin-bottom: 20px;
 }
 
 .information-link{
@@ -418,8 +473,6 @@ font-family: Roboto;
     height: 1px;
     background: var(--footer-line);
     margin-top: 20px;
-    display: flex;
-    align-items: center;
 }
 
 .information-text-rights{
