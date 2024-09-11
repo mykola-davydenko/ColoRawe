@@ -368,6 +368,10 @@
   line-height: 1.14;
 }
 
+.reviews-img-flowers{
+display: flex;
+}
+
 .main-border {
   width: 1440px;
   height: 2px;
