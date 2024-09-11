@@ -36,7 +36,7 @@
 }
 
 .header-brand {
-  padding-right: 152px;
+  margin-right: 152px;
 }
 
 .nav-list {
@@ -231,10 +231,9 @@
 }
 
 .main-reviews {
-  background-image: url(../img/reviews-background.jpg);
+  background-image: url(../img/reviews-background.jpg), url(../img/flowers.png);
   background-position: center;
   background-size: cover;
-  background-position: left bottom;
   padding-top: 25px;
   padding-bottom: 115px;
 }
@@ -267,14 +266,16 @@
   );
   box-shadow: 0px 14px 0px -5px var(--john-gradient),
     0px 30px 0px -13px var(--john-item-gradient);
+  padding-top: 49px;
+  padding-left: 13px;
+  padding-bottom: 29px;
+  padding-right: 14px;
   border-radius: 15px;
   width: 255px;
 }
 
-.reviews-div1{
-display: flex;
-gap: 5px;
-margin-top: 47px;
+.reviews1-div {
+  display: flex;
 }
 
 .reviews-item-elizabeth {
@@ -290,9 +291,13 @@ margin-top: 47px;
     0px 30px 0px -13px var(--elizabeth-item-gradient);
   padding-top: 49px;
   padding-left: 18px;
-  padding-bottom: 8px;
+  padding-bottom: 29px;
   padding-right: 9px;
   width: 255px;
+}
+
+.reviews2-div {
+  display: flex;
 }
 
 .reviews-item-tom {
@@ -308,9 +313,13 @@ margin-top: 47px;
     0px 30px 0px -13px var(--tom-item-gradient);
   padding-top: 49px;
   padding-left: 18px;
-  padding-bottom: 8px;
+  padding-bottom: 29px;
   padding-right: 9px;
   width: 255px;
+}
+
+.reviews3-div {
+  display: flex;
 }
 
 .reviews-caption {
@@ -329,12 +338,15 @@ margin-top: 47px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.14;
+  margin-top: 8px;
+  margin-bottom: 47px;
 }
 
 .reviews-img {
   border-radius: 31px;
   width: 31px;
   height: 31px;
+  margin-right: 5px;
 }
 
 .reviews-headline {
@@ -344,9 +356,10 @@ margin-top: 47px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.42;
+  margin-bottom: 1px;
 }
 
-.reviews-sentences {
+.reviews-sentence {
   color: var(--reviews-date);
   font-family: Roboto;
   font-size: 14px;
