@@ -368,10 +368,6 @@
   line-height: 1.14;
 }
 
-.reviews-img-flowers{
-display: flex;
-}
-
 .main-border {
   width: 1440px;
   height: 2px;
@@ -379,9 +375,10 @@ display: flex;
 }
 
 .main-order {
-  background-image: url(../img/order-background.png);
-  background-position: center;
-  background-size: cover;
+  background-image: url(../img/order-background.png), url(../img/flowers.png);
+  background-position: center, left bottom;
+  background-size: cover, 340px;
+  background-repeat: no-repeat, no-repeat;
   padding-top: 21px;
   padding-bottom: 37px;
   text-align: center;
