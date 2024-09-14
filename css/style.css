@@ -231,9 +231,10 @@
 }
 
 .main-reviews {
-  background-image: url(../img/reviews-background.jpg), url(../img/flowers.png);
-  background-position: center;
-  background-size: cover;
+  background-image: url(../img/flowers.png), url(../img/reviews-background.jpg);
+  background-repeat: no-repeat;
+  background-position: left bottom, center;
+  background-size: 250px 340px, cover;
   padding-top: 25px;
   padding-bottom: 115px;
 }
@@ -375,10 +376,10 @@
 }
 
 .main-order {
-  background-image: url(../img/order-background.png), url(../img/flowers.png);
-  background-position: center, left bottom;
-  background-size: cover, 340px;
-  background-repeat: no-repeat, no-repeat;
+  background-image: url(../img/order-background.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 21px;
   padding-bottom: 37px;
   text-align: center;
